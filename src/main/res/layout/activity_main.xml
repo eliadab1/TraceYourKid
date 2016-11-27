@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/myappscreen"
+    tools:context="com.example.eliad.traceyourkid.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:hint="Your child name"
+                android:ems="10"
+                android:id="@+id/kidName"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/text"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"
+                android:hint="Email"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="#fbfafa"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password"
+                android:hint="Password"
+                android:paddingBottom="20dp"
+                android:background="#fffdfd" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is my child phone"
+                    android:focusable="false"
+                    android:id="@+id/ChildPhone"
+                    android:textColor="@color/abc_input_method_navigation_guard" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login"
+                    android:onClick="login"
+                    android:id="@+id/login"
+                    android:background="#00ffffff"
+                    android:scaleType="fitCenter"
+                    android:paddingTop="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sign up now"
+                android:id="@+id/signup"
+                android:clickable="true"
+                android:onClick="SignUp"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="maps"
+                android:id="@+id/maps"
+                android:onClick="maps"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

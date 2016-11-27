@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trace your kid</string>
+    <string name="title_activity_kid_map_location">Map</string>
+    <string name="title_activity_parent_trace_map">Map</string>
+</resources>
